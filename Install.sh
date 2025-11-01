@@ -9,11 +9,6 @@ orange='\e[38;5;166m'
 green='\033[92m'
 
 if pgrep -s 0 '^sudo$' > /dev/null ; then
-    echo''
-else
-    echo 'Please run with sudo!'
-fi
-
 clear
 sleep 1.5
 echo -e "$default"
@@ -24,3 +19,6 @@ cd
 cd
 cd AllHackingTools
 python3 src/InstallMenu.py
+else
+    echo 'Please run with sudo!'
+fi
