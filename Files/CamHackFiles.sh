@@ -1,10 +1,10 @@
-apt-get install git
-apt-get install python
+sudo apt-get install git
+sudo apt-get install python
 cd
 cd AllHackingTools
 git clone https://github.com/AngelSecurityTeam/Cam-Hackers
-pip3 install requests
-pip3 install colorama
+pipx install requests
+pipx install colorama
 cd Cam-Hackers
 cd
 cd AllHackingTools
