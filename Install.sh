@@ -12,9 +12,12 @@ if pgrep -s 0 '^sudo$' > /dev/null ; then
 clear
 sleep 1.5
 echo -e "$default"
+sudo apt update
+sudo apt install pipx
+pipx ensurepath
 sudo apt install python3
 sudo apt install pip
-sudo pip install requests
+sudo pipx install requests
 cd
 cd
 cd AllHackingTools
